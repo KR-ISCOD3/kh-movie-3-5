@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Bayon&family=SUSE:wght@100..800&family=Siemreap&display=swap');
+/* ----------- Variable-Color ----------- */
+:root{
+    --main-color-900: #294650;
+    --main-color-800: #2c525e;
+    --main-color-700: #2d6171;
+    --main-color-600: #2f7283;
+    --main-color-500: #3892a2;
+    --main-color-400: #53aebd;
+    --main-color-300: #8accd6;
+    --main-color-200: #bae2e7;
+    --main-color-100: #daf1f3;
+    --main-color-50: #f1fafa;
+}
+
+/* ----------- Text - Color ------------- */
+.text-blue-900{
+    color: var(--main-color-900) !important;
+}
+.text-blue-800{
+    color: var(--main-color-800) !important;
+}
+.text-blue-700{
+    color: var(--main-color-700) !important;
+}
+.text-blue-600{
+    color: var(--main-color-600) !important;
+}
+.text-blue-500{
+    color: var(--main-color-500) !important;
+}
+.text-blue-400{
+    color: var(--main-color-400) !important;
+}
+.text-blue-300{
+    color: var(--main-color-300) !important;
+}
+.text-blue-200{
+    color: var(--main-color-200) !important;
+}
+.text-blue-100{
+    color: var(--main-color-100) !important;
+}
+.text-blue-50{
+    color: var(--main-color-50) !important;
+}
+
+
+/* ----------- Bg - Color ------------- */
+.bg-blue-900{
+    background-color: var(--main-color-900) !important;
+}
+.bg-blue-800{
+    background-color: var(--main-color-800) !important;
+}
+.bg-blue-700{
+    background-color: var(--main-color-700) !important;
+}
+.bg-blue-600{
+    background-color: var(--main-color-600) !important;
+}
+.bg-blue-500{
+    background-color: var(--main-color-500) !important;
+}
+.bg-blue-400{
+    background-color: var(--main-color-400) !important;
+}
+.bg-blue-300{
+    background-color: var(--main-color-300) !important;
+}
+.bg-blue-200{
+    background-color: var(--main-color-200) !important;
+}
+.bg-blue-100{
+    background-color: var(--main-color-100) !important;
+}
+.bg-blue-50{
+    background-color: var(--main-color-50) !important;
+}
+
+/* ------------------- Font --------------------- */
+.font-kh-siemreap{
+    font-family: "Siemreap", sans-serif !important;
+    font-weight: 200;
+}
+.font-kh-bayon{
+    font-family: "Bayon", sans-serif !important;
+    font-weight: 200;
+}
+.font-en{
+    font-family: "SUSE", sans-serif !important;
+}
