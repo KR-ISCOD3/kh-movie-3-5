@@ -19,55 +19,57 @@
 <body>
     <div class="container-fluid p-0">
         <!-- -------- Header ----------- -->
-        <header class="bg-dark py-2 py-lg-4">
-            <nav class="navbar container p-0 text-light">
-                <div class="d-flex align-items-center">
-                    <div style="width: 55px;height: 55px;" class="overflow-hidden">
-                        <img src="./assets/icons/logo-icon.png" alt="" class="w-100 h-100 object-fit-cover">
+        <header>
+            <nav id="nav" class="navbar container-fluid text-light fixed-top ">
+                <div class="container">
+                    <div class="d-flex align-items-center">
+                        <div style="width: 55px;height: 55px;" class="overflow-hidden">
+                            <img src="./assets/icons/logo-icon.png" alt="" class="w-100 h-100 object-fit-cover">
+                        </div>
+                        <div class="ms-2">
+                            <p class="m-0 fs-2 font-kh-bayon">ខ្មែរ-TV</p>
+                        </div>
                     </div>
-                    <div class="ms-2">
-                        <p class="m-0 fs-2 font-kh-bayon">ខ្មែរ-TV</p>
+    
+                    <ul class="nav align-items-center font-kh-bayon d-none d-lg-flex">
+                        <a href="" class="nav-link text-light fs-4 text-hover">
+                            <li>
+                                ទំព័រដើម 
+                            </li>
+                        </a>
+                        <a href="" class="nav-link text-light fs-4 text-hover">
+                            <li>
+                                រឿងភាគ 
+                            </li>
+                        </a>
+                        <a href="" class="nav-link text-light fs-4 text-hover">
+                            <li>
+                                រឿងដំុ
+                            </li>
+                        </a>
+                        <a href="" class="nav-link text-light fs-4 text-hover">
+                            <li>
+                                តុក្កតា
+                            </li>
+                        </a>
+                    </ul>
+    
+                    <div class="d-none d-lg-flex align-items-center">
+                        <div class="border-end pe-2">
+                            <button class="btn border-0 text-light fs-5">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                        <div>
+                            <button class="btn text-light fs-5 border-0">Sign In</button>
+                            <button class="btn bg-blue-500 text-light fs-5">Sign Up</button>
+                        </div>
                     </div>
+    
+                    <button class="d-block d-lg-none btn border-0" data-bs-toggle="offcanvas" data-bs-target="#menuside">
+                        <i class="bi bi-list text-light fs-2"></i>
+                    </button>
                 </div>
-
-                <ul class="nav align-items-center font-kh-bayon d-none d-lg-flex">
-                    <a href="" class="nav-link text-light fs-4 text-hover">
-                        <li>
-                            ទំព័រដើម 
-                        </li>
-                    </a>
-                    <a href="" class="nav-link text-light fs-4 text-hover">
-                        <li>
-                            រឿងភាគ 
-                        </li>
-                    </a>
-                    <a href="" class="nav-link text-light fs-4 text-hover">
-                        <li>
-                            រឿងដំុ
-                        </li>
-                    </a>
-                    <a href="" class="nav-link text-light fs-4 text-hover">
-                        <li>
-                            តុកាត្តា
-                        </li>
-                    </a>
-                </ul>
-
-                <div class="d-none d-lg-flex align-items-center">
-                    <div class="border-end pe-2">
-                        <button class="btn border-0 text-light fs-5">
-                            <i class="bi bi-search"></i>
-                        </button>
-                    </div>
-                    <div>
-                        <button class="btn text-light fs-5 border-0">Sign In</button>
-                        <button class="btn bg-blue-500 text-light fs-5">Sign Up</button>
-                    </div>
-                </div>
-
-                <button class="d-block d-lg-none btn border-0" data-bs-toggle="offcanvas" data-bs-target="#menuside">
-                    <i class="bi bi-list text-light fs-2"></i>
-                </button>
             </nav>
 
             <div class="offcanvas offcanvas-end" id="menuside">
@@ -82,14 +84,212 @@
                     </div>
                     <button class="btn-close btn shadow-none" data-bs-dismiss="offcanvas"></button>
                 </div>
-                <div class="offcanvas-body"></div>
+                <div class="offcanvas-body">
+                    <ul class="font-kh-bayon list-unstyled">
+                        <a href="" class="nav-link text-black fs-4 text-hover">
+                            <li class="my-3 border-bottom pb-2">
+                                ទំព័រដើម 
+                            </li>
+                        </a>
+                        <a href="" class="nav-link text-black fs-4 text-hover">
+                            <li class="my-3 border-bottom pb-2">
+                                រឿងភាគ 
+                            </li>
+                        </a>
+                        <a href="" class="nav-link text-black fs-4 text-hover">
+                            <li class="my-3 border-bottom pb-2">
+                                រឿងដំុ
+                            </li>
+                        </a>
+                        <a href="" class="nav-link text-black fs-4 text-hover">
+                            <li class="my-3 border-bottom pb-2">
+                                តុក្កត្តា
+                            </li>
+                        </a>
+                    </ul>
+                  
+                    <div>
+                        <form action="" class="font-kh-siemreap mb-2 bg-light border d-flex">
+                            <input type="text" name="" id="" class="form-control bg-transparent shadow-none border-0" placeholder="ស្វែងរក....">
+                            <button class="btn border-0 text-dark fs-5">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </form>
+                      <div>
+                        <button class="btn text-dark fs-5 border">Sign In</button>
+                        <button class="btn bg-blue-500 text-light fs-5">Sign Up</button>
+                      </div>
+                    </div>
+                    
+                </div>
             </div>
         </header>
         <!-- --------------------------- -->
 
         <!-- --------  Main  ----------- -->
         <main>
+            <div class="hero">
+                <div class="container ">
+                   <div class=" col-md-6">
+                        <p class="font-kh-bayon text-blue-400 fs-1 mb-lg-2">ខ្មែរ-TV <span class="text-light">ភាពយន្តគ្មាន</span></p>
+                        <p style="font-size: clamp(44px,4vw,120px);" class="text-light font-kh-bayon m-0">ដែនកំណត់ <span class="text-blue-500 auto-type"></span></p>
+                        <p style="font-size: clamp(40px,4vw,120px);" class="text-light font-kh-bayon">នៅក្នុង ខ្មែរ-TV របស់យើង</p>
+                        <div class="d-flex align-items-center font-en mt-4">
+                            <div class="d-flex">
+                                <div class="d-flex">
+                                    <p class="text-bg-light fw-bold m-0 px-1">PG 18</p>
+                                    <p class="border border-2 px-2 text-light fw-bold m-0">HD</p>
+                                </div>
+                                <div class="px-3">
+                                    <a href="" class="text-light text-hover m-0 text-decoration-none fw-bolder">Ramance,</a>
+                                    <a href="" class="text-light text-hover m-0 text-decoration-none fw-bolder">Drama</a>
+                                </div>
+                            </div>
+                            <div class="pe-4 pe-md-2 pe-lg-0 d-flex align-items-center">
+                                <i class="bi bi-alarm me-2 fw-bolder text-light"></i>
+                                <p class="text-light m-0 fw-bolder">123min</p>
+                            </div>
+                        </div>
+                        <button class="my-4 btn fs-4 text-blue-500 border-blue px-4 py-2 fw-bold">
+                            មើលឥឡូវនេះ
+                        </button>
+                   </div>
+                </div>
+            </div>
 
+            <!-- Movie-Card -->
+            <div class="card-content container-fluid">
+                <div class="container py-5">
+
+                    <div class="row m-0 justify-content-between align-items-center px-3">
+
+                        <div class="text-center text-lg-start col-lg-6">
+
+                            <p class="text-light fs-4 font-kh-siemreap text-blue-400 fw-bold m-0">មើលតាម Online</p>
+                            <h1 class="text-light fw-bold font-en">Upcoming Movie</h1>
+
+                        </div>
+
+                       <div class="col-lg-6  mt-2 m-lg-0">
+                        
+                            <ul class="nav justify-content-center justify-content-lg-end nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item">
+                                <button class="btn btn-dark border rounded-5 px-3 active"  data-bs-toggle="pill" data-bs-target="#pills-scare" type="button" >
+                                    រឿងរន្ធត់
+                                </button>
+                                </li>
+                                <li class="nav-item">
+                                <button class="btn btn-dark border rounded-5 px-3 mx-md-3"  data-bs-toggle="pill" data-bs-target="#pills-joke" type="button" >
+                                    រឿងកំប្លែង
+                                </button>
+                                </li>
+                                <li class="nav-item">
+                                <button class="btn btn-dark border rounded-5 px-3 "  data-bs-toggle="pill" data-bs-target="#pills-love" type="button" >
+                                    រឿងស្នេហា
+                                </button>
+                                </li>
+                            </ul>
+                       </div>
+                    </div>  
+
+                    <div class="tab-content mt-4" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-scare">
+                            <div class="d-flex justify-content-between overflow-x-scroll scroll-bar" id="scarymovie">
+
+                                <!-- Card -->
+                                <div class=" col-md-6 col-lg-3 ">
+                                    <div class="px-3">
+                                        <div style="height: 450px;" class="bg-blue-100 overflow-hidden hover-image rounded-2">
+                                            <img src="./assets/images/movie1.png" alt="" class="w-100 h-100 object-fit-cover">
+                                        </div>
+
+                                        <div class="d-flex justify-content-between mt-4 mb-2">
+                                            <h3 class="text-light font-kh-bayon">គ្រាប់ពេជ្រ</h3>
+                                            <h3 class="text-blue-400 fw-bold">២០២៤</h3>
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-3">
+                                            <p class="border border-2 px-2 text-light fw-bold m-0 text-blue-400">HD</p>
+                                            <div class="pe-4 pe-md-2 pe-lg-0 d-flex align-items-center ">
+                                                <i class="bi bi-alarm me-2 fw-bolder text-blue-400 fw-bold"></i>
+                                                <p class="text-light m-0 fw-bolder">123 min</p>
+                                                &ensp;
+                                                <i class="bi bi-star-fill me-2 fw-bolder text-blue-400 fw-bold"></i>
+                                                <p class="text-light m-0 fw-bolder">4.3</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card -->
+                                
+                                
+                            </div>
+                        </div>
+
+
+                        <div class="tab-pane fade" id="pills-joke" >
+                            <h1 class="text-light">Joke</h1>
+                        </div>
+                        <div class="tab-pane fade" id="pills-love" >
+                            <h1 class="text-light">Love</h1>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            <!-- Movie-Card -->
+
+            <!-- Section Download -->
+            <div class="container-fluid p-0 bg-dark">
+                <div class="container p-0">
+                    <div class="row m-0 ">
+                        <div class="col-lg-6 p-4 p-lg-5 d-flex align-items-center justify-content-center ">
+                           
+                            <img src="./assets/images/hdimage.png" alt="" class="w-100">
+                          
+                        </div>
+                        <div class="col-lg-6 p-4 p-lg-5 ">
+
+                           <p class="border-start border-2 ps-2 fw-bold font-en text-light">Our Services</p>
+                           <h1 class="text-light font-kh-bayon mb-3">ទាញយករឿងដែលអ្នកស្រលាញ់</h1>
+                           <h1 class="text-light font-kh-bayon">មើលយ៉ាងរំភើយ</h1>
+                            <p  class="text-light font-en">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Similique illo sunt praesentium eaque nostrum? Beatae quis 
+                                fugit eum praesentium molestiae maxime minus, amet laborum, 
+                                earum ullam unde, quisquam perspiciatis corporis.
+                            </p>
+                            <div class="d-flex align-items-center text-light">
+                              
+                                <h1 class=" p-4 mb-0 rounded-circle bg-hover trasition" style="border-style: dashed;font-size: 45px;">
+                                    <i class="bi bi-tv-fill "></i>
+                                </h1>
+                                <div class="ms-2">
+                                    <h3 class="font-kh-bayon m-0">រីករាយជាមួយរឿង</h3>
+                                    <p class="m-0">Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. </p>
+                                </div>
+                            </div>
+
+                            <!-- rular -->
+                            <hr class="text-light " style="border-style: dashed;">
+                            <!-- rular -->
+
+                            <div class="d-flex align-items-center text-light">      
+                                <h1 class=" p-4 mb-0 rounded-circle bg-hover trasition" style="border-style: dashed;font-size: 45px;">
+                                    <i class="bi bi-camera-video-fill "></i>
+                                </h1>
+                                <div class="ms-2">
+                                    <h3 class="font-kh-bayon m-0">មើលគ្រប់ទីកន្លែង</h3>
+                                    <p class="m-0">Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Section Download -->
+
+            
         </main>
         <!-- --------------------------- -->
 
@@ -100,5 +300,6 @@
         <!-- --------------------------- -->
     </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script src="./script/script.js"></script>
 </html>
