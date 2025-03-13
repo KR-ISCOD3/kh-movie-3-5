@@ -26,6 +26,7 @@ window.onscroll = function () {
 
 var movieAarr = [
   {
+    
     title: "ចញ្ជៀងខ្មោច",
     year: "២០១៨",
     duration: 120,
@@ -66,6 +67,68 @@ scarymovie.innerHTML = "";
 movieAarr.forEach((e) => {
   scarymovie.innerHTML += `
         <div class="col-12 col-md-6 col-lg-3 ">
+            <div class="px-3">
+                <div style="height: 450px;" class="bg-blue-100 overflow-hidden hover-image rounded-2">
+                    <img src="${e.img}" alt="" class="w-100 h-100 object-fit-cover">
+                </div>
+
+                <div class="d-flex justify-content-between mt-4 mb-2">
+                    <h3 class="text-light font-kh-bayon">${e.title}</h3>
+                    <h3 class="text-blue-400 fw-bold">${e.year}</h3>
+                </div>
+                <div class="d-flex justify-content-between mt-3">
+                    <p class="border border-2 px-2 text-light fw-bold m-0 text-blue-400">HD</p>
+                    <div class="pe-4 pe-md-2 pe-lg-0 d-flex align-items-center ">
+                        <i class="bi bi-alarm me-2 fw-bolder text-blue-400 fw-bold"></i>
+                        <p class="text-light m-0 fw-bolder">${e.duration} min</p>
+                        &ensp;
+                        <i class="bi bi-star-fill me-2 fw-bolder text-blue-400 fw-bold"></i>
+                        <p class="text-light m-0 fw-bolder">${e.rate}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+});
+
+var movie = document.getElementById("movie");
+movie.innerHTML = "";
+movieAarr.forEach((e) => {
+  movie.innerHTML += `
+
+        <div class="col-12 col-md-6 col-lg-3 my-3">
+            <div class="px-3">
+                <div style="height: 450px;" class="bg-blue-100 overflow-hidden hover-image rounded-2">
+                    <img src="${e.img}" alt="" class="w-100 h-100 object-fit-cover">
+                </div>
+
+                <div class="d-flex justify-content-between mt-4 mb-2">
+                    <h3 class="text-light font-kh-bayon">${e.title}</h3>
+                    <h3 class="text-blue-400 fw-bold">${e.year}</h3>
+                </div>
+                <div class="d-flex justify-content-between mt-3">
+                    <p class="border border-2 px-2 text-light fw-bold m-0 text-blue-400">HD</p>
+                    <div class="pe-4 pe-md-2 pe-lg-0 d-flex align-items-center ">
+                        <i class="bi bi-alarm me-2 fw-bolder text-blue-400 fw-bold"></i>
+                        <p class="text-light m-0 fw-bolder">${e.duration} min</p>
+                        &ensp;
+                        <i class="bi bi-star-fill me-2 fw-bolder text-blue-400 fw-bold"></i>
+                        <p class="text-light m-0 fw-bolder">${e.rate}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+  
+});
+
+
+
+var movie2 = document.getElementById("movie2");
+movie2.innerHTML = "";
+movieAarr.forEach((e) => {
+  movie2.innerHTML += `
+        <div class="col-12 col-md-6 col-lg-3 my-3">
             <div class="px-3">
                 <div style="height: 450px;" class="bg-blue-100 overflow-hidden hover-image rounded-2">
                     <img src="${e.img}" alt="" class="w-100 h-100 object-fit-cover">
